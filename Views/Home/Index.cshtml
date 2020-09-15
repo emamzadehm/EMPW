@@ -27,25 +27,20 @@
 </section>
 <!-- END: HOME -->
 <!-- START: ABOUT -->
-@*<partial name="_About" />*@
-@*@await Component.InvokeAsync("_About")*@
+<partial name="About" />
 <!-- END: ABOUT -->
 <!-- START: Courses -->
-@*<partial name="Courses" />*@
+@await Component.InvokeAsync("Course")
 <!-- END: Courses -->
-<!-- START: PORTFOLIO -->
-@*<partial name="Portfolio" />*@
-<!-- END: PORTFOLIO -->
 <!-- START: TESTIMONY -->
-@*<partial name="Testimonials" />*@
-@await Component.InvokeAsync("Histories")
+@await Component.InvokeAsync("Testimonials")
 <!-- END: TESTIMONY -->
 <!-- START: RESUME -->
-@*<partial name="Resume" />*@
+@await Component.InvokeAsync("Resume")
 <!-- END: RESUME -->
 <!-- START: BLOG -->
 <partial name="Blog" />
 <!-- END: BLOG -->
 <!-- START: CONTACT -->
-@*<partial name="Contact" />*@
+@await Component.InvokeAsync("Contact")
 <!-- END: CONTACT -->

@@ -275,7 +275,6 @@ F:\Projects\EMPW\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 F:\Projects\EMPW\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\Projects\EMPW\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\Projects\EMPW\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.csprojAssemblyReference.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.AssemblyInfoInputs.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.AssemblyInfo.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.csproj.CoreCompileInputs.cache
@@ -287,8 +286,6 @@ F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.TagHelpers.output.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.RazorCoreGenerate.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\About\_About.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Contact\_Contact.cshtml.g.cs
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Courses\_Courses.cshtml.g.cs
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Histories\_Testimonials.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Resume\_Resume.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Blog.cshtml.g.cs
@@ -306,3 +303,8 @@ F:\Projects\EMPW\obj\Debug\netcoreapp3.1\staticwebassets\Emamzadeh.StaticWebAsse
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.dll
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.pdb
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.genruntimeconfig.cache
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Testimonials\_Testimonials.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Course\_Courses.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.csprojAssemblyReference.cache
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Footer.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Menu\_Menu.cshtml.g.cs

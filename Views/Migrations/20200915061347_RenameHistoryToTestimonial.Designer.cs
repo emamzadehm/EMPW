@@ -4,14 +4,16 @@ using Emamzadeh;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Emamzadeh.Migrations
 {
     [DbContext(typeof(EMContext))]
-    partial class EMContextModelSnapshot : ModelSnapshot
+    [Migration("20200915061347_RenameHistoryToTestimonial")]
+    partial class RenameHistoryToTestimonial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -140,9 +142,6 @@ namespace Emamzadeh.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LinkedInURL")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MapAddress")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")

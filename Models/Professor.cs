@@ -13,8 +13,9 @@ namespace Emamzadeh.Models
         public string Email { get; private set; }
         public string Address { get; private set; }
         public string LinkedInURL { get; private set; }
+        public string MapAddress { get; private set; }
 
-        public Professor(string name, string family, string level, string imgAddress, string tel, string email, string address, string linkedInURL)
+        public Professor(string name, string family, string level, string imgAddress, string tel, string email, string address, string linkedInURL, string mapAddress)
         {
             Name = name;
             Family = family;
@@ -24,6 +25,7 @@ namespace Emamzadeh.Models
             Email = email;
             Address = address;
             LinkedInURL = linkedInURL;
+            MapAddress = mapAddress;
         }
     }
 }

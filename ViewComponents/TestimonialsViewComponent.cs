@@ -4,17 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Emamzadeh.ViewComponents
 {
-    public class HistoriesViewComponent : ViewComponent
+    public class TestimonialsViewComponent : ViewComponent
     {
         private readonly DBOperations _dboperations;
-        public HistoriesViewComponent(DBOperations dboperations)
+        public TestimonialsViewComponent(DBOperations dboperations)
         {
             _dboperations = dboperations;
         }
         public IViewComponentResult Invoke()
         {
-            var historylist = _dboperations.HistoryList();
-            return View("_Testimonials", historylist);
+            var testimonialslist = _dboperations.TestimonialList();
+            return View("_Testimonials", testimonialslist);
         }
     }
 }

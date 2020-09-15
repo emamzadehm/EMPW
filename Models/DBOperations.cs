@@ -10,9 +10,21 @@ namespace Emamzadeh.Models
         {
             _emcontext = eMContext;
         }
-        public List<History> HistoryList()
+        public List<Testimonial> TestimonialList()
         {
-            return _emcontext.Histories.ToList();
+            return _emcontext.Testimonials.Where(x=>x.IsVisible==true).ToList();
+        }
+        public List<Resume> ResumesList()
+        {
+            return _emcontext.Resumes.OrderBy(x=>x.Id).ToList();
+        }
+        public List<Course> CoursesList()
+        {
+            return _emcontext.Courses.OrderByDescending(x => x.Id).ToList();
+        }
+        public Professor GetProfessor()
+        {
+            return _emcontext.Professors.FirstOrDefault(x => x.Id == 1);
         }
     }
 }

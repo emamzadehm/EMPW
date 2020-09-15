@@ -2,7 +2,7 @@
 
 namespace Emamzadeh.Models
 {
-    public class History
+    public class Testimonial
     {
         public int Id { get; private set; }
         public string StudentName { get; private set; }
@@ -15,7 +15,7 @@ namespace Emamzadeh.Models
         public bool IsVisible { get; private set; }
         public DateTime CreatedDate { get; private set; }
 
-        public History(string studentName, string studentImg, string courseName, string universityName, int eduYear, string title, string description)
+        public Testimonial(string studentName, string studentImg, string courseName, string universityName, int eduYear, string title, string description)
         {
             StudentName = studentName;
             StudentImg = studentImg;
