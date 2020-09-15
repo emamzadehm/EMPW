@@ -26,5 +26,9 @@ namespace Emamzadeh.Models
         {
             return _emcontext.Professors.FirstOrDefault(x => x.Id == 1);
         }
+        public List<File> FilesList(int typeid)
+        {
+            return _emcontext.Files.Where(x => x.TypeID == typeid).ToList();
+        }
     }
 }

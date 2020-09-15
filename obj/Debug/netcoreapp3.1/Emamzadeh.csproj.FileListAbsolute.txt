@@ -284,7 +284,6 @@ F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.RazorAssemblyInfo.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.TagHelpers.input.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.TagHelpers.output.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.RazorCoreGenerate.cache
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\About\_About.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Contact\_Contact.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Resume\_Resume.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
@@ -308,3 +307,4 @@ F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Course\_Cou
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.csprojAssemblyReference.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Footer.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Menu\_Menu.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\About.cshtml.g.cs
