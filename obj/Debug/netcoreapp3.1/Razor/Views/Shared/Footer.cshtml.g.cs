@@ -27,7 +27,7 @@ using Emamzadeh.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f02ceff994923a34f9ede569b86c436476666da0", @"/Views/Shared/Footer.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"669539bda9ef8379804d997fe69a220d801a7ce1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"977d3c66d905108defbba9c0d2095cbd06a28d16", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Footer : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

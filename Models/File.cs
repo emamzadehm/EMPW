@@ -1,26 +1,34 @@
 ﻿using System;
+using System.IO;
 
 namespace Emamzadeh.Models
 {
     public class File
     {
-        public int Id { get; private set; }
-        public string Title { get; private set; }
-        public string FileName { get; private set; }
-        public string FileAddress { get; private set; }
-        public string Description { get; private set; }
-        public DateTime UploadDate { get; private set; }
-        public int TypeID { get; private set; }
-        public FileType FileTypes { get; private set; }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string FileName { get; set; }
+        public string FileExtention { get; set; }
+        public long FileLenght { get; set; }
+        public string Description { get; set; }
+        public DateTime UploadDate { get; set; }
+        public int FileTypeId { get; set; }
 
-        public File(string title, string fileName, string fileAddress, string description, int typeID)
+        public File()
+        {
+
+        }
+
+        public File(string title, string fileName, string description, int fileTypeId)
         {
             Title = title;
-            FileName = fileName;
-            FileAddress = fileAddress;
+            FileName = new FileInfo(fileName).Name;
+            FileExtention = new FileInfo(fileName).Extension;
+            FileLenght = new FileInfo(fileName).Length;
             Description = description;
-            TypeID = typeID;
+            FileTypeId = fileTypeId;
             UploadDate = DateTime.Now;
         }
+
     }
 }

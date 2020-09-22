@@ -6,6 +6,10 @@
         public string Title { get; private set; }
         public string Description { get; private set; }
 
+        protected Course()
+        {
+
+        }
         public Course(string title, string description)
         {
             Title = title;

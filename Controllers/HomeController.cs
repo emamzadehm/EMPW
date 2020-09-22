@@ -1,37 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Emamzadeh.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Emamzadeh.Models;
+
 
 namespace Emamzadeh.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly DBOperations _dboperations;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(DBOperations dboperations)
         {
-            _logger = logger;
+            _dboperations = dboperations;
         }
-
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Index(Message message)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.error = "اطلاعات ثبت نگردید. لطفاً مجدداً تلاش نمائید.";
+                return View();
+            }
+            ViewBag.nt = message;
+            //_dboperations.AddMessage(message);
+            ViewBag.success = "اطلاعات با موفقیت ثبت گردید. با تشکر.";
+            ModelState.Clear();
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

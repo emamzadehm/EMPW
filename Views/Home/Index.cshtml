@@ -43,4 +43,5 @@
 <!-- END: BLOG -->
 <!-- START: CONTACT -->
 @await Component.InvokeAsync("Contact")
+@await Component.InvokeAsync("ContactSend", new { message = ViewBag.nt })
 <!-- END: CONTACT -->

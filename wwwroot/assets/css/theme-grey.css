@@ -63,6 +63,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    direction: rtl;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -181,6 +182,7 @@ img {
 }
 
 textarea {
+    direction:rtl;
     height: 100px;
     resize: none;
 }
@@ -262,6 +264,7 @@ b, strong {
 }
 
 .b-box {
+    direction:rtl;
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -1873,6 +1876,7 @@ span.blog-by {
     height: auto;
     border-radius: 30px;
     font-size: 14px;
+    direction:rtl;
 }
 
 .section-contact .section-subHead { 

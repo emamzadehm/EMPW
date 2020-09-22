@@ -21,6 +21,8 @@ namespace Emamzadeh
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+
             var Connectionstring = Configuration.GetConnectionString("EMCS");
             services.AddDbContext<EMContext>(x => x.UseSqlServer(Connectionstring));
             services.AddTransient<DBOperations>();
@@ -46,12 +48,22 @@ namespace Emamzadeh
 
             app.UseAuthorization();
 
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                  name: "areas",
+                  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
         }
     }
 }

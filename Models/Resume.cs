@@ -10,6 +10,10 @@ namespace Emamzadeh.Models
         public string Title { get; private set; }
         public string Description { get; private set; }
 
+        protected Resume()
+        {
+
+        }
         public Resume(string fromYear, string toYear, string title, string description)
         {
             FromYear = fromYear;

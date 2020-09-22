@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Net.Mime;
 using Emamzadeh.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,10 +13,21 @@ namespace Emamzadeh.Controllers
             _dboperations = dboperations;
         }
 
-        public IActionResult Index(int id)
+        [HttpGet]
+        public IActionResult Index(int Id)
         {
-            var files = _dboperations.FilesList(id);
-            return View(files);
+            //var files = _dboperations.FilesList(Id);
+            //return View(files);
+            ViewBag.Id = Id;
+            return View();
+        }
+        [HttpPost]
+        public FileResult Download(int Id)
+        {
+            var selectedfile = _dboperations.GetFileBy(Id).ToString();
+            var selectedfileByte = System.IO.File.ReadAllBytes("~/assets/Files/" + selectedfile);
+
+            return File(selectedfileByte, MediaTypeNames.Image.Jpeg);
         }
     }
 }

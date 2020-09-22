@@ -27,7 +27,7 @@ using Emamzadeh.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3816b9cbb099e5a2d0ddf94e132f869a1d57747a", @"/Views/Home/Components/Course/_Courses.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"669539bda9ef8379804d997fe69a220d801a7ce1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"977d3c66d905108defbba9c0d2095cbd06a28d16", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Components_Course__Courses : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Emamzadeh.Models.Course>>
     {
         #pragma warning disable 1998

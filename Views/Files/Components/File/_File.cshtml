@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Emamzadeh.Models.File>
+<section class="section" id="blog">
+    <div class="container">
+        <div class="section-head">
+            <span>فایل ها و محتوای آموزشی</span>
+            <h2>فایلها، نمونه سوالات و محتوای آموزشی</h2>
+        </div>
+
+        <div class="section-inner">
+            <div class="row">
+                @foreach (var fi in Model)
+                {
+            <div class="col-md-4">
+                <div class="blog-list d-block mb-5 ">
+                    <div class="blog-list--img">
+                            <img src="~/assets/images/ext/@{@fi.FileExtention}.png" alt="@fi.Title" title="@fi.Description" class="img-fluid">
+                            <div class="blog-list--details d-flex justify-content-center align-items-center">
+                                <div class="blog-list--details-in">
+                                    <p class="blog-date text-white">@fi.Title</p>
+                                    <span class="blog-by">@fi.Description</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-list--desc p-4">
+                            <span class="blog-cat badge badge-primary">@fi.Title</span>
+
+                            <h3>نوع فایل: @fi.FileExtention</h3>
+                            <h3>حجم فایل: @fi.FileLenght</h3>
+                            <h3>تاریخ بارگزاری: @fi.UploadDate.ToShortDateString()</h3>
+                            <div class="col-lg-12 text-center mt-4">
+                                <button type="submit" asp-action="Download" asp-controller="Files" asp-route-id="@fi.Id" class="btn">دریافت فایل</button>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+                }
+
+                        </div>
+
+        </div>
+    </div>
+</section>

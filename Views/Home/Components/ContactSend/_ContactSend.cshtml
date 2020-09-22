@@ -1,0 +1,72 @@
+﻿@model Emamzadeh.Models.Message
+
+<section class="section section-contact" id="contact2">
+    <div class="container">
+       
+
+        <div class="section-inner">
+            <div class="contact-Otherdetails ">
+                
+
+                <div class="contact-form mt-5">
+                    <form method="post">
+                        <h5 class="section-subHead mb-2">فرم تماس</h5>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group mt-3 ">
+                                    <input asp-for="Name" type="text" class="form-control b-box" placeholder="*نام شما">
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group mt-3 ">
+                                    <input asp-for="Email" type="email" class="form-control b-box" placeholder="*ایمیل">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-3 ">
+                                    <input type="text" class="form-control b-box" asp-for="Title" placeholder="موضوع...">
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-3 ">
+                                    <textarea asp-for="Description" rows="4" class="form-control b-box" placeholder="پیام..."></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12 text-center mt-4">
+                                <button type="submit" class="btn">ارسال</button>
+                            </div>
+                        </div>
+                    </form>
+                    @if (!string.IsNullOrWhiteSpace(ViewBag.success))
+                    {
+                        <div class="alert-success p-1 rounded-pill">
+                            <i class="alert-success"></i>
+                            <p>@ViewBag.success</p>
+                        </div>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(ViewBag.error))
+                    {
+                        <div class="alert-danger p-1rounded-pill">
+                            <i class="alert-danger"></i>
+                            <p>@ViewBag.error</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+

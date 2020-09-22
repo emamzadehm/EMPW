@@ -15,6 +15,10 @@ namespace Emamzadeh.Models
         public string LinkedInURL { get; private set; }
         public string MapAddress { get; private set; }
 
+        public Professor()
+        {
+
+        }
         public Professor(string name, string family, string level, string imgAddress, string tel, string email, string address, string linkedInURL, string mapAddress)
         {
             Name = name;

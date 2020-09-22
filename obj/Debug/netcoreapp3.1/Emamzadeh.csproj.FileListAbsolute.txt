@@ -284,7 +284,6 @@ F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.RazorAssemblyInfo.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.TagHelpers.input.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.TagHelpers.output.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.RazorCoreGenerate.cache
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Contact\_Contact.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Resume\_Resume.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Blog.cshtml.g.cs
@@ -304,7 +303,13 @@ F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.pdb
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.genruntimeconfig.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Testimonials\_Testimonials.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Course\_Courses.cshtml.g.cs
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.csprojAssemblyReference.cache
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Footer.cshtml.g.cs
-F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Menu\_Menu.cshtml.g.cs
 F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\About.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Files\Index.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Files\Components\File\_File.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Menu\_Menu.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Index.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Components\TestimonialSend\_TestimonialSend.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Emamzadeh.csprojAssemblyReference.cache
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\ContactSend\_ContactSend.cshtml.g.cs
+F:\Projects\EMPW\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Contact\_Contact.cshtml.g.cs

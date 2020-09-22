@@ -1,0 +1,108 @@
+﻿@model Emamzadeh.Models.Testimonial
+    <section>
+        <div class="container">
+            <div class="row"></div>
+
+            <div class="row"></div>
+
+            <div class="row"></div>
+
+            <div class="row"></div>
+
+            <div class="section-head">
+                <span>دفترچه خاطرات</span>
+                <h2>ارسال خاطرات</h2>
+            </div>
+
+            <div class="section-inner">
+                <div class="contact-Otherdetails ">
+                    <div class="contact-form mt-5">
+                        <form method="post">
+                            @*<div asp-validation-summary="ModelOnly">*@
+                                <h5 class="section-subHead mb-2">فرم ارسال خاطرات</h5>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-3 ">
+                                            <input asp-for="StudentName" type="text" class="form-control b-box" placeholder="*نام شما">
+                                            <span asp-validation-for="StudentName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-3 ">
+                                            <input asp-for="StudentEmail" type="email" class="form-control b-box" placeholder="*ایمیل">
+                                            <span asp-validation-for="StudentEmail" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-3 ">
+                                            <input asp-for="UniversityName" type="text" class="form-control b-box" placeholder="*دانشگاه محل تحصیل">
+                                            <span asp-validation-for="UniversityName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-3 ">
+                                            <input asp-for="CourseName" type="text" class="form-control b-box" placeholder="*نام درس">
+                                            <span asp-validation-for="CourseName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-3 ">
+                                            <input asp-for="EduYear" type="text" class="form-control b-box" placeholder="*سال تحصیلی">
+                                            <span asp-validation-for="EduYear" class="text-danger"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-3 form-inline ">
+                                            <label asp-for="StudentImg">تصویر شما</label>
+                                            <input asp-for="StudentImg" type="file" class="form-control b-box">
+                                            <span asp-validation-for="StudentImg" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-3 ">
+                                            <input asp-for="Title" type="text" class="form-control b-box" placeholder="*عنوان خاطره">
+                                            <span asp-validation-for="Title" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-3 ">
+                                            <textarea asp-for="Description" rows="4" class="form-control b-box" placeholder="...متن خاطره"></textarea>
+                                            <span asp-validation-for="Description" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-12 text-center mt-4">
+                                        <button type="submit" class="btn">ارسال</button>
+                                    </div>
+                                </div>
+                            @*</div>*@
+                        </form>
+                    </div>
+                </div>
+            </div>
+            @if (!string.IsNullOrWhiteSpace(ViewBag.success))
+            {
+                <div class="alert-success p-1 rounded-pill">
+                    <i class="alert-success"></i>
+                    <p>@ViewBag.success</p>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(ViewBag.error))
+            {
+                <div class="alert-danger p-1rounded-pill">
+                    <i class="alert-danger"></i>
+                    <p>@ViewBag.error</p>
+                </div>
+            }
+        </div>
+    </section>
